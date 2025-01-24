@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "motivational-dashboard"
+version = "0.1.0"
+description = "Motivational dashboard for the Investments team"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.4"
+streamlit = "^1.40.1"
+streamlit-autorefresh = "^1.0.1"
+datetime = "^5.5"
+numpy = "^2.1.3"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+logging = "^0.4.9.6"
+asyncio = "^3.4.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
