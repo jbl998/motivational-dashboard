@@ -1,16 +1,11 @@
-from io import StringIO
-import json
+# External modules
 import pandas as pd
 import streamlit as st
-import requests
 import datetime as dt
 import numpy as np
-import time
 import altair as alt
 import base64
-
-from streamlit import expander
-
+# Internal modules
 import config as cfg
 
 now = dt.datetime.now()

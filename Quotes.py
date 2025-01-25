@@ -1,13 +1,5 @@
-from io import StringIO
-import json
-import pandas as pd
+# External modules
 import streamlit as st
-import requests
-import datetime as dt
-import numpy as np
-import time
-import altair as alt
-import base64
 import pyquotegen
 
 

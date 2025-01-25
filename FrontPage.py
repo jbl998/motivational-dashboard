@@ -1,16 +1,9 @@
-from io import StringIO
-import json
+# External modules
 import pandas as pd
 import streamlit as st
-import requests
 import datetime as dt
 import numpy as np
-import time
-
-# Test
-import subprocess
-import sys
-
+# Internal modules
 import config as cfg
 
 st.set_page_config(page_title="Motivational Dashboard", page_icon="")
