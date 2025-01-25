@@ -3,9 +3,9 @@ import time
 import os
 
 # Global constants
-pathCSV = "src/files/csv/"
-pathIMG = "src/files/img/"
-pathLogs = "src/files/logs_runtime/"
+pathCSV = "files/csv/"
+pathIMG = "files/img/"
+pathLogs = "files/logs_runtime/"
 
 
 def setup_logging():
