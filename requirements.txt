@@ -4,4 +4,3 @@ streamlit
 datetime
 numpy
 pyquotegen
-base64
