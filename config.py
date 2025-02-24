@@ -35,8 +35,8 @@ imgInfo = {
     "Countdown": {
         "filename": "countdown.png",
         "imgwidth": 612,
-        "textposition": [{"top": 75, "left": 250}],
-        "fontsize": 25,
+        "textposition": [{"top": 75, "left": 260}],
+        "fontsize": 30,
         "fontcolor": "#FF0000"
     },
 
