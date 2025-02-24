@@ -20,7 +20,7 @@ dfLayoffNow["date"] = dfLayoffNow.loc[dfLayoffNow["date"] <= now]
 layoffDT = max(dfLayoffNow["date"])
 
 dfLayoffYDAY = dfLayoff.copy()
-dfLayoffYDAY["date"] = dfLayoffYDAY.loc[dfLayoffYDAY["date"] <= yday]
+dfLayoffYDAY = dfLayoffYDAY.loc[dfLayoffYDAY["date"] <= yday]
 layoffDTYDAY = max(dfLayoffYDAY["date"])
 
 

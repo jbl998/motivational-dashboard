@@ -8,7 +8,15 @@ import config as cfg
 
 st.set_page_config(page_title="Motivational Dashboard", page_icon="")
 
-pages = [st.Page("Timer.py"), st.Page("Quotes.py")]
+dfLayoff = pd.read_csv(f"{cfg.pathCSV}/layoffs.csv")
+dfLayoff["date"] = pd.to_datetime(dfLayoff["date"], format="%Y-%m-%d")
+dfLayoff['date'] = dfLayoff['date'].dt.normalize() + pd.Timedelta(hours=9)
+filtered_df = dfLayoff.loc[(dfLayoff['date'] >= dt.datetime.now())]
+if len(filtered_df) > 0:
+    pages = [st.Page("Timer.py"), st.Page("Countdown.py"), st.Page("Quotes.py")]
+else:
+    pages = [st.Page("Timer.py"), st.Page("Quotes.py")]
+
 
 pg = st.navigation(pages)
 pg.run()
